@@ -1,0 +1,28 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+:root {
+  --font-main: 'Syne', sans-serif;
+  --font-mono: 'Syne Mono', monospace;
+}
+
+html { height: 100%; }
+
+body {
+  font-family: var(--font-main);
+  height: 100%;
+  overflow-x: hidden;
+}
+
+#root {
+  min-height: 100vh;
+  width: 100%;
+}
+
+button { font-family: var(--font-main); cursor: pointer; }
+input  { font-family: var(--font-main); }
+
+@keyframes float    { 0%,100%{transform:translateY(0)} 50%{transform:translateY(-14px)} }
+@keyframes fall     { from{transform:translateY(-80px)} to{transform:translateY(110vh)} }
+@keyframes twinkle  { 0%,100%{opacity:.15} 50%{opacity:1} }
+@keyframes spin     { to{transform:rotate(360deg)} }
+@keyframes fadeIn   { from{opacity:0;transform:translateY(8px)} to{opacity:1;transform:translateY(0)} }
